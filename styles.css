@@ -43,10 +43,26 @@ nav {
 
 .image-title {
     background-image: url('img/493.jpg');
-    width: 40rem;
+    width: 31rem;
     height: 1rem;
     position: absolute;
 
     transform: translatey(5.7rem);
     z-index: -1;
+}
+
+.quienes-somos {
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    max-width: 40rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #544734;
+}
+
+.qs-image-1 {
+    background-image: url('img/bacalao.jpg');
+    width: 333px;
+    height: 249px;
 }
