@@ -10,9 +10,16 @@
 }
 
 a {
-    text-decoration: none;
-    outline: none;
-    color: #544734;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    text-decoration: none !important;
+    color: #544734 !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+    color:  #544734 !important;
 }
 
 nav {
