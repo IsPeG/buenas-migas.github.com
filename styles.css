@@ -24,10 +24,11 @@ a:hover {
 
 nav {
     position: fixed;
-    background-color: #c2d8c3;
-    border-bottom: 1px solid #dd623e;
+    background-color: white;
+    border-bottom: 3px solid #9cd8ce;
     /* border-image: url('img/493.jpg') 7 round; */
     z-index: 50;
+    font-weight: bold;
     /* background-image: url('img/493.jpg'); */
 }
 
@@ -95,18 +96,18 @@ nav {
 
 @keyframes navbar-hide {
 	0% {
-		left: 0%;
+		top: 0px;
 	}
 	100% {
-		left: 100%;
+		top: -100px;
 	}
 }
 
 @keyframes navbar-show {
 	0% {
-		left: 100%;
+		top: -100px;
 	}
 	100% {
-		left: 0%;
+		top: 0px;
 	}
 }

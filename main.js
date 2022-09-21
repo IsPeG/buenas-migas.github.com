@@ -8,10 +8,10 @@ function onMobile () {
     //navbar
     if (w < 544) {
         $('nav a').css('font-size', '0.9rem')
-        $('.menu-ham').css({height: 30, width: 30}).removeClass('mt-5 ms-5').addClass('mt-3 ms-3')
+        $('.menu-ham').css({height: 30, width: 30}).removeClass('mt-3 ms-3').addClass('mt-3 ms-3')
     } else {
         $('nav a').css('font-size', '1.2rem')
-        $('.menu-ham').css({height: 50, width: 50}).removeClass('mt-3 ms-3').addClass('mt-5 ms-5')
+        $('.menu-ham').css({height: 50, width: 50}).removeClass('mt-3 ms-3').addClass('mt-3 ms-3')
     }
     
     //title
@@ -50,8 +50,9 @@ var menuOpen = true
 function menuAction () {
     console.log(menuOpen)
     if (!menuOpen) {
-        $('#navbar').css('animation', 'navbar-show 0.2s ease-in-out').css('left', '0%')
+        $('#navbar').css('animation', 'navbar-show 0.2s ease-in-out').css('top', '0px')
         $('.menu-ham').addClass('d-none')
+        $('.menu-cross').removeClass('d-none')
         menuOpen = true
     } else {
         closeMenu()
@@ -59,8 +60,9 @@ function menuAction () {
 }
 
 function closeMenu() {
-    $('#navbar').css('animation', 'navbar-hide 0.2s ease-in-out').css('left', '100%')
+    $('#navbar').css('animation', 'navbar-hide 0.2s ease-in-out').css('top', '-100px')
     $('.menu-ham').removeClass('d-none')
+    $('.menu-cross').addClass('d-none')
     menuOpen = false
 }
 
