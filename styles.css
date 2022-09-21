@@ -23,12 +23,16 @@ a:hover {
 }
 
 nav {
-    height: 2rem;
+    position: fixed;
+    background-color: #c2d8c3;
+    border-bottom: 1px solid #dd623e;
+    /* border-image: url('img/493.jpg') 7 round; */
+    z-index: 50;
     /* background-image: url('img/493.jpg'); */
 }
 
 .title-bg {
-    height: 35rem;
+    height: 38rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,10 +56,10 @@ nav {
 }
 
 .quienes-somos {
-    margin-top: -3rem;
-    margin-bottom: 2rem;
+    /* margin-top: -3rem; */
+    /* margin-bottom: 2rem; */
     padding: 1rem;
-    max-width: 40rem;
+    max-width: 60rem;
     font-size: 1.5rem;
     font-weight: bold;
     color: #544734;
@@ -65,4 +69,44 @@ nav {
     background-image: url('img/bacalao.jpg');
     width: 333px;
     height: 249px;
+}
+
+.section-title {
+    color: #544734;
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+#title {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes navbar-hide {
+	0% {
+		left: 0%;
+	}
+	100% {
+		left: 100%;
+	}
+}
+
+@keyframes navbar-show {
+	0% {
+		left: 100%;
+	}
+	100% {
+		left: 0%;
+	}
 }

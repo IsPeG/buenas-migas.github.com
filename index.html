@@ -7,45 +7,66 @@
     <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Cocina de Mai</title>
+    <title>Cocina de May</title>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
     integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
     crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="w-100 text-center bg-white text-black">
-        <div class="align-middle d-flex justify-content-evenly">
-            <a href="">¿Quiénes somos?</a>
-            <a href="">Nuestros servicios</a>
+    <img style="z-index: 100;" src="img/menu.png" alt="" class="d-block position-fixed mt-5 ms-5 menu-ico menu-ham" width="50" height="50">
+
+    <nav id="navbar" class="w-100 text-center text-black" style="left: 100%;">
+        <div class="align-middle d-flex justify-content-evenly py-2">
+            <img src="img/cross.png" width="20" height="20" alt="" class="d-block menu-ico menu-cross">
+            <a href="#qs">¿Quiénes somos?</a>
+            <a href="#ns">Nuestros servicios</a>
             <a href="">Contáctanos</a>
         </div>
     </nav>
-    <div class="w-100 title-bg text-center text-black">
-        <span class="title">Cocina de May</span>
-        <div class="image-title"></div>
-    </div>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#c2d8c3" fill-opacity="1" d="M0,64L30,101.3C60,139,120,213,180,234.7C240,256,300,224,360,208C420,192,480,192,540,160C600,128,660,64,720,64C780,64,840,128,900,149.3C960,171,1020,149,1080,165.3C1140,181,1200,235,1260,224C1320,213,1380,139,1410,101.3L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
-      </svg>
-
-    <div style="background-color: #c2d8c3;">
-        <div class="d-flex justify-content-center">
-            <div class="quienes-somos">
-                <span style="z-index:1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio quo voluptatem illum excepturi aspernatur odio veritatis harum enim corrupti assumenda, quod nisi error dolores, dicta sunt pariatur, eos ab ipsa.</span>
-                <!-- <div class="d-flex justify-content-evenly" style="position: absolute; transform: translate(15rem, -18rem);">
-                    <img class="d-block" src="img/bacalao.jpg" alt="">
-                    <img class="d-block" src="img/bacalao.jpg" alt="">
-                </div> -->
-            </div>
+    <div id="title">
+        <div class="w-100 title-bg text-center text-black">
+            <span class="title">Cocina de May</span>
+            <div class="image-title"></div>
         </div>
     </div>
 
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#c2d8c3" fill-opacity="1" d="M0,192L40,170.7C80,149,160,107,240,96C320,85,400,107,480,128C560,149,640,171,720,170.7C800,171,880,149,960,165.3C1040,181,1120,235,1200,250.7C1280,267,1360,245,1400,234.7L1440,224L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
-      </svg>
+    <div id="qs">
 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#c2d8c3" fill-opacity="1" d="M0,64L30,101.3C60,139,120,213,180,234.7C240,256,300,224,360,208C420,192,480,192,540,160C600,128,660,64,720,64C780,64,840,128,900,149.3C960,171,1020,149,1080,165.3C1140,181,1200,235,1260,224C1320,213,1380,139,1410,101.3L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+          </svg>
+    
+        <div style="background-color: #c2d8c3; margin-top: -1px;">
+            <div class="d-flex justify-content-center">
+                <div class="quienes-somos text-center">
+                    <div class="container mb-5">
+                        <div class="row">
+                            <div class="col align-items-center mb-3">
+                                <span class="section-title d-block mb-5">¿Quienes somos?</span>
+                                <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio quo voluptatem illum excepturi aspernatur odio veritatis harum enim corrupti assumenda, quod nisi error dolores, dicta sunt pariatur, eos ab ipsa.</span></div>
+                            <div class="col text-center qs-image-container-ver d-none">
+                                <img loading="lazy" src="img/qs-ver.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qs-image-container-hor">
+                        <img loading="lazy" src="img/qs-hor.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#c2d8c3" fill-opacity="1" d="M0,192L40,170.7C80,149,160,107,240,96C320,85,400,107,480,128C560,149,640,171,720,170.7C800,171,880,149,960,165.3C1040,181,1120,235,1200,250.7C1280,267,1360,245,1400,234.7L1440,224L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
+        </svg>
+    
+    </div>
+
+    <div id="ns" class="text-center">
+        <span class="section-title d-block mb-5">Nuestros servicios</span>
+    </div>
     <script src="main.js"></script>
 </body>
 </html>
