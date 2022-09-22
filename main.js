@@ -1,6 +1,7 @@
 ScrollReveal().reveal('.title', { delay: 300 });
 ScrollReveal().reveal('.image-title', { delay: 350 });
-ScrollReveal().reveal('.quienes-somos', { delay: 400 });
+ScrollReveal().reveal('.qs-show', { interval: 200 });
+ScrollReveal().reveal('.ns-section', { delay: 100, interval: 100 })
 
 function onMobile () {
     var w = window.innerWidth;
@@ -9,9 +10,21 @@ function onMobile () {
     if (w < 544) {
         $('nav a').css('font-size', '0.9rem')
         $('.menu-ham').css({height: 30, width: 30}).removeClass('mt-3 ms-3').addClass('mt-3 ms-3')
+
+        $('.menu-cross').css({height: 30, width: 30, top: '5rem'})
+        $('.nav-link').removeClass('px-5').addClass('px-2')
+
+        $('#navbar div').removeClass('py-3')
+
     } else {
         $('nav a').css('font-size', '1.2rem')
         $('.menu-ham').css({height: 50, width: 50}).removeClass('mt-3 ms-3').addClass('mt-3 ms-3')
+
+        $('.menu-cross').css({height: 45, width: 45, top: '6rem'})
+        $('.nav-link').removeClass('px-2').addClass('px-5')
+
+        $('#navbar div').addClass('py-3')
+
     }
     
     //title
