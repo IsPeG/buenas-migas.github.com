@@ -7,7 +7,7 @@ function onMobile () {
     var w = window.innerWidth;
 
     //navbar
-    if (w < 544) {
+    if (w < 818) {
         $('nav a').css('font-size', '0.9rem')
         $('.menu-ham').css({height: 30, width: 30}).removeClass('mt-3 ms-3').addClass('mt-3 ms-3')
 
@@ -28,7 +28,7 @@ function onMobile () {
     }
     
     //title
-    if (w < 666) {
+    if (w < 665) {
         $('.image-title').css('width', '20rem')
         $('.title-bg span').css('font-size', '2.5rem')
         $('.title-bg span').css('transform', 'translateY(0rem)')
@@ -64,7 +64,7 @@ window.onresize = onMobile
 
 onMobile()
 
-var menuOpen = true
+var menuOpen = false
 
 function menuAction () {
     console.log(menuOpen)
@@ -79,6 +79,7 @@ function menuAction () {
 }
 
 function closeMenu() {
+    if (!menuOpen) return
     $('#navbar').css('animation', 'navbar-hide 0.2s ease-in-out').css('top', '-100px')
     $('.menu-ham').removeClass('d-none')
     $('.menu-cross').addClass('d-none')

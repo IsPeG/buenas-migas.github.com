@@ -10,7 +10,8 @@
 }
 
 body {
-    background-image: url('img/prueba.jpg');
+    background-image: url('img/bg.jpg');
+    background-size: contain;
 }
 
 a {
@@ -28,8 +29,8 @@ a:hover {
 
 nav {
     position: fixed;
-    background-color: white;
-    border-bottom: 3px solid #9cd8ce;
+    background-color: #ffffffdd;
+    border-bottom: 3px solid #e17575;
     /* border-image: url('img/493.jpg') 7 round; */
     z-index: 50;
     font-weight: bold;
@@ -117,7 +118,7 @@ nav {
 }
 
 .ns-section {
-    background-color: #544734;
+    background-color: #46351e;
     font-weight: bold;
     color: white;
     font-size: 1.3rem;
@@ -150,4 +151,9 @@ i {
     font-size: 1.5rem;
     position: relative;
     top: 0.25rem;
+}
+
+.map {
+    min-width: 20rem;
+    height: 25rem;
 }
