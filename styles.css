@@ -9,6 +9,10 @@
     font-family: "Varela Round", sans-serif;
 }
 
+body {
+    background-image: url('img/prueba.jpg');
+}
+
 a {
     font-size: 1.2rem;
     font-weight: bold;
@@ -84,13 +88,13 @@ nav {
 
 @keyframes float {
 	0% {
-		transform: translatey(0px);
+		transform: translatey(0rem);
 	}
 	50% {
-		transform: translatey(-20px);
+		transform: translatey(-1rem);
 	}
 	100% {
-		transform: translatey(0px);
+		transform: translatey(0rem);
 	}
 }
 
@@ -132,6 +136,12 @@ nav {
 
 .c-section {  
     width: 20rem;
+    min-width: 5rem;
+    color: white;
+}
+
+.c-section-l {  
+    width: 34rem;
     min-width: 5rem;
     color: white;
 }

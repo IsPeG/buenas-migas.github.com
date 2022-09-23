@@ -1,7 +1,7 @@
 ScrollReveal().reveal('.title', { delay: 300 });
 ScrollReveal().reveal('.image-title', { delay: 350 });
 ScrollReveal().reveal('.qs-show', { interval: 200 });
-ScrollReveal().reveal('.ns-section', { delay: 100, interval: 100 })
+ScrollReveal().reveal('.ns-section', { delay: 100, interval: 5 })
 
 function onMobile () {
     var w = window.innerWidth;
@@ -50,6 +50,12 @@ function onMobile () {
     } else {
         $('.qs-image-container-hor').removeClass('d-none')
         $('.qs-image-container-ver').addClass('d-none')
+    }
+
+    if (w < 1400) {
+        $('.c-section-l').css('width', '20rem');
+    } else {
+        $('.c-section-l').css('width', '34rem');
     }
 
 }
