@@ -4,6 +4,7 @@ ScrollReveal().reveal('.qs-show', { interval: 200 });
 ScrollReveal().reveal('.ns-section', { delay: 100, interval: 5 })
 
 function onMobile () {
+    
     var w = window.innerWidth;
 
     //navbar
@@ -47,9 +48,12 @@ function onMobile () {
     if (w < 900) {
         $('.qs-image-container-hor').addClass('d-none')
         $('.qs-image-container-ver').removeClass('d-none')
+        $('#qs-title').addClass('pt-5');
     } else {
         $('.qs-image-container-hor').removeClass('d-none')
         $('.qs-image-container-ver').addClass('d-none')
+        $('#qs-title').removeClass('pt-5');
+
     }
 
     if (w < 1400) {
