@@ -37,6 +37,15 @@ nav {
     /* background-image: url('img/493.jpg'); */
 }
 
+#navbar-vertical {
+    position: fixed;
+    width: 20rem;
+}
+
+.menu-ico {
+    cursor: pointer;
+}
+
 .title-bg {
     height: 38rem;
     display: flex;
@@ -99,7 +108,7 @@ nav {
 	}
 }
 
-@keyframes navbar-hide {
+@keyframes navbar-hor-hide {
 	0% {
 		top: 0px;
 	}
@@ -108,12 +117,30 @@ nav {
 	}
 }
 
-@keyframes navbar-show {
+@keyframes navbar-hor-show {
 	0% {
 		top: -100px;
 	}
 	100% {
 		top: 0px;
+	}
+}
+
+@keyframes navbar-ver-hide {
+	0% {
+		left: 0px;
+	}
+	100% {
+		left: -20rem;
+	}
+}
+
+@keyframes navbar-ver-show {
+	0% {
+		left: -20rem;
+	}
+	100% {
+		left: 0px;
 	}
 }
 
