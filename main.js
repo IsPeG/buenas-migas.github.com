@@ -101,6 +101,14 @@ function onMobile () {
         $('.c-section-l').css('width', '34rem');
     }
 
+    if (menuMode == 'hor') {
+        if (w < 1085) {
+            $('nav a').css('font-size', '0.8rem')
+        } else {
+            $('nav a').css('font-size', '1.3rem')
+        }
+    }
+
 }
 
 window.onresize = onMobile
