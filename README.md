@@ -1,3 +1,10 @@
-# Cocina de May
+# Buenas Migas
  
-Webpage for Cocina de May (unfinished)
+Webpage for Buenas Migas (unfinished)
+
+## TODO
+
+ - Cambiar correo
+ - Imágenes
+ - Enlaces a rrss
+ - Mapa
