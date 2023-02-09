@@ -93,7 +93,6 @@ function onMobile () {
 window.onresize = onMobile
 
 function menuAction () {
-    console.log(menuOpen)
     if (!menuOpen) {
         if (menuMode == 'hor') {
             $('#navbar-horizontal').css('animation', 'navbar-hor-show 0.2s ease-in-out').css('top', '0px')
