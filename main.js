@@ -1,7 +1,7 @@
 ScrollReveal().reveal('.title', { delay: 300 });
 ScrollReveal().reveal('.image-title', { delay: 350 });
 ScrollReveal().reveal('.qs-show', { interval: 200 });
-ScrollReveal().reveal('.ns-section', { delay: 100, interval: 5, reset: true })
+ScrollReveal().reveal('.ns-section', { delay: 100, interval: 5 })
 
 var menuOpen = false
 var menuMode = 'hor'
@@ -70,27 +70,6 @@ function onMobile () {
             $('.nav-link').removeClass('px-2').addClass('px-5')
     
             $('#navbar-horizontal div').addClass('py-1')
-        }
-
-    }
-    
-    //quienes somos image 
-    if (w < 900) {
-        $('.qs-image-container-hor').addClass('d-none')
-        $('.qs-image-container-ver').removeClass('d-none')
-        $('#qs-title').addClass('pt-5');
-
-        if (menuMode == 'hor') {
-            $('nav a').css('font-size', '1rem')
-        }
-
-    } else {
-        $('.qs-image-container-hor').removeClass('d-none')
-        $('.qs-image-container-ver').addClass('d-none')
-        $('#qs-title').removeClass('pt-5');
-
-        if (menuMode == 'hor') {
-            $('nav a').css('font-size', '1.3rem')
         }
 
     }
