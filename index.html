@@ -1,282 +1,416 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
+  <head>
     <!-- Estilos -->
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <!-- Meta tags -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <meta name="keywords" content="catering, zaragoza, zgz, comidas, bodas, buenas, migas, las buenas migas">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="keywords"
+      content="catering, zaragoza, zgz, comidas, bodas, buenas, migas, las buenas migas"
+    />
     <title>Las Buenas Migas</title>
-    <meta name="title" content="Las Buenas Migas">
-    <meta name="description" content="Las Buenas Migas es una joven empresa familiar creada en 2015 que cuenta con un equipo de profesionales que estarán encantados de ofrecer la mejor experiencia de catering posible">
+    <meta name="title" content="Las Buenas Migas" />
+    <meta
+      name="description"
+      content="Las Buenas Migas es una joven empresa familiar creada en 2015 que cuenta con un equipo de profesionales que estarán encantados de ofrecer la mejor experiencia de catering posible"
+    />
+
+    <!-- icons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/ico/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/ico/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/ico/favicon-16x16.png"
+    />
+    <link rel="manifest" href="img/ico/site.webmanifest" />
+
     <!-- cdns -->
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://code.jquery.com/jquery-3.6.1.min.js"integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <img
+      style="z-index: 100"
+      src="img/menu.png"
+      alt="menu icon"
+      class="d-block position-fixed mt-3 ms-3 menu-ico menu-ham"
+      width="50"
+      height="50"
+    />
 
-</head>
-<body>
-    <img style="z-index: 100;" src="img/menu.png" alt="menu icon" class="d-block position-fixed mt-3 ms-3 menu-ico menu-ham" width="50" height="50">
+    <nav
+      id="navbar-horizontal"
+      class="w-100 text-center text-black"
+      style="top: -100px"
+    >
+      <div
+        class="align-middle d-flex justify-content-center py-3 align-items-center"
+      >
+        <img
+          src="img/cross.png"
+          width="45"
+          height="45"
+          alt="cross icon"
+          class="menu-ico menu-cross position-fixed d-none"
+          style="top: 6rem"
+        />
 
-    <nav id="navbar-horizontal" class="w-100 text-center text-black" style="top: -100px;">
-        <div class="align-middle d-flex justify-content-center py-3 align-items-center">
-        
-            <img src="img/cross.png" width="45" height="45" alt="cross icon" class="menu-ico menu-cross position-fixed d-none" style="top: 6rem;">
-
-            <a href="#qs-title" class="px-5 nav-link">● ¿Quiénes somos?</a>
-            <a href="#ns-title" class="px-5 nav-link">● Nuestros servicios</a>
-            <a href="#ph-title" class="px-5 nav-link">● Fotos</a>
-            <a href="#c-title" class="px-5 nav-link">● Contacta con nosotros</a>
-        </div>
+        <a href="#qs-title" class="px-5 nav-link">● ¿Quiénes somos?</a>
+        <a href="#ns-title" class="px-5 nav-link">● Nuestros servicios</a>
+        <a href="#ph-title" class="px-5 nav-link">● Fotos</a>
+        <a href="#c-title" class="px-5 nav-link">● Contacta con nosotros</a>
+      </div>
     </nav>
 
-    <nav id="navbar-vertical" class="d-flex flex-column h-100" style="left: -20rem;">
+    <nav
+      id="navbar-vertical"
+      class="d-flex flex-column h-100"
+      style="left: -20rem"
+    >
+      <a href="#qs-title" class="nav-link">● ¿Quiénes somos?</a>
+      <a href="#ns-title" class="nav-link">● Nuestros servicios</a>
+      <a href="#ph-title" class="nav-link">● Fotos</a>
+      <a href="#c-title" class="nav-link">● Contacta con nosotros</a>
 
-        <a href="#qs-title" class="nav-link">● ¿Quiénes somos?</a>
-        <a href="#ns-title" class="nav-link">● Nuestros servicios</a>
-        <a href="#ph-title" class="nav-link">● Fotos</a>
-        <a href="#c-title" class="nav-link">● Contacta con nosotros</a>
-
-        <img src="img/cross.png" width="100" height="100" alt="cross icon" class="menu-ico menu-cross mt-auto ms-auto" style="top: 6rem;">
-
+      <img
+        src="img/cross.png"
+        width="100"
+        height="100"
+        alt="cross icon"
+        class="menu-ico menu-cross mt-auto ms-auto"
+        style="top: 6rem"
+      />
     </nav>
 
     <div>
-        <div id="title" class="w-100 title-bg text-center text-black">
-            <span class="title">Las Buenas Migas</span>
-            <div class="image-title"></div>
-        </div>
+      <div id="title" class="w-100 title-bg text-center text-black">
+        <span class="title">Las Buenas Migas</span>
+        <div class="image-title"></div>
+      </div>
     </div>
 
     <div id="qs">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#c2d8c3"
+          fill-opacity="1"
+          d="M0,64L30,101.3C60,139,120,213,180,234.7C240,256,300,224,360,208C420,192,480,192,540,160C600,128,660,64,720,64C780,64,840,128,900,149.3C960,171,1020,149,1080,165.3C1140,181,1200,235,1260,224C1320,213,1380,139,1410,101.3L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"
+        ></path>
+      </svg>
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#c2d8c3" fill-opacity="1" d="M0,64L30,101.3C60,139,120,213,180,234.7C240,256,300,224,360,208C420,192,480,192,540,160C600,128,660,64,720,64C780,64,840,128,900,149.3C960,171,1020,149,1080,165.3C1140,181,1200,235,1260,224C1320,213,1380,139,1410,101.3L1440,64L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
-          </svg>
-    
-        <div style="background-color: #c2d8c3; margin-top: -1px; margin-bottom: -1px;">
-            <div class="d-flex justify-content-center">
-                <div class="quienes-somos text-center">
-                    <div class="container mb-5">
-                        <div class="row">
-                            <div class="col align-items-center mb-3">
-                                <span id="qs-title" class="section-title d-block mb-5 qs-show">¿Quiénes somos?</span>
-                                <span class="qs-show">
-                                    <span style="color: #de623e">Las Buenas Migas</span> es una joven empresa familiar creada en 2015 que cuenta con un <span style="color: #3486ce;">equipo de profesionales</span> que estarán encantados de ofrecer la mejor experiencia de catering posible. Usamos alimentos de <span style="color: #156b5e;">primera calidad</span> y de <span style="color: #5a7500;">comercios de proximidad</span> para poder elaborar los mejores platos caseros.
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+      <div
+        style="background-color: #c2d8c3; margin-top: -1px; margin-bottom: -1px"
+      >
+        <div class="d-flex justify-content-center">
+          <div class="quienes-somos text-center">
+            <div class="container mb-5">
+              <div class="row">
+                <div class="col align-items-center mb-3">
+                  <span id="qs-title" class="section-title d-block mb-5 qs-show"
+                    >¿Quiénes somos?</span
+                  >
+                  <span class="qs-show">
+                    <!-- <span style="color: #de623e">Las Buenas Migas</span> es una joven empresa familiar creada en 2015 que cuenta con un <span style="color: #3486ce;">equipo de profesionales</span> que estarán encantados de ofrecer la mejor experiencia de catering posible. Usamos alimentos de <span style="color: #156b5e;">primera calidad</span> y de <span style="color: #5a7500;">comercios de proximidad</span> para poder elaborar los mejores platos caseros. -->
+                    <span style="color: #05668d">Las Buenas Migas</span> es una
+                    empresa joven creada en 2022. Somos una empresa familiar y
+                    tenemos un trato cercano con nuestros clientes de parte de
+                    nuestro
+                    <span style="color: #53a548">equipo profesional</span>.
+                    Contamos con la
+                    <span style="color: #ed4d6e">experiencia</span> de haber
+                    colaborado con anuncios, películas y programas de televisión
+                    al colaborar con Aragon TV, Mediapro y Factoría plural.<br /><br />Nos
+                    caracteriza nuestra colaboración con
+                    <span style="color: #f19a3e">empresas de proximidad</span> y
+                    nuestro servicio de
+                    <span style="color: #05668d">calidad</span>,
+                    <span style="color: #ed4d6e">confianza</span> y
+                    <span style="color: #32965d">totalmente personalizado</span>
+                    para satisfacer las necesidades y gustos de cada cliente
+                    para poder así llevar a cabo un evento memorable.<br /><br />
+                    No dudes en
+                    <span style="color: #f19a3e">contactar con nosotros</span>
+                    para cualquier duda o pedir un presupuesto para el
+                    desarrollo de su evento.
+                  </span>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#c2d8c3" fill-opacity="1" d="M0,192L40,170.7C80,149,160,107,240,96C320,85,400,107,480,128C560,149,640,171,720,170.7C800,171,880,149,960,165.3C1040,181,1120,235,1200,250.7C1280,267,1360,245,1400,234.7L1440,224L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path>
-        </svg>
-    
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#c2d8c3"
+          fill-opacity="1"
+          d="M0,192L40,170.7C80,149,160,107,240,96C320,85,400,107,480,128C560,149,640,171,720,170.7C800,171,880,149,960,165.3C1040,181,1120,235,1200,250.7C1280,267,1360,245,1400,234.7L1440,224L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+        ></path>
+      </svg>
     </div>
 
     <div id="ph" class="text-center">
-        
-        <span id="ph-title" class="section-title d-block mb-5">Fotos</span>
+      <span id="ph-title" class="section-title d-block mb-5">Fotos</span>
 
-        <div class="row-ph"> 
-            <div class="column-ph">
-              <img src="img/fotos/1.jpg" style="width:100%" loading="lazy">
-              <img src="img/fotos/2.jpg" style="width:100%" loading="lazy">
-              <img src="img/fotos/11.jpg" style="width:100%" loading="lazy">
-              <img src="img/fotos/4.jpg" style="width:100%" loading="lazy">
-            </div>
-            <div class="column-ph">
-                <img src="img/fotos/5.jpg" style="width:100%" loading="lazy">
-                <img src="img/fotos/7.jpg" style="width:100%" loading="lazy">
-                <img src="img/fotos/10.jpg" style="width:100%" loading="lazy">
-                <img src="img/fotos/9.jpg" style="width:100%" loading="lazy">
-            </div>  
-            <div class="column-ph">
-                <img src="img/fotos/6.jpg" style="width:100%" loading="lazy">
-                <img src="img/fotos/15.jpg" style="width:100%" loading="lazy">
-                <img src="img/fotos/13.jpg" style="width:100%" loading="lazy">
-            </div>
-            <div class="column-ph">
-                <img src="img/fotos/14.jpg" style="width:100%" loading="lazy">
-                <img src="img/fotos/3.jpg" style="width:100%" loading="lazy">
-                <img src="img/fotos/16.jpg" style="width:100%" loading="lazy">
-                <img src="img/fotos/12.jpg" style="width:100%" loading="lazy">
-            </div>
-          </div>
-        
-
+      <div class="row-ph">
+        <div class="column-ph">
+          <img src="img/fotos/1.webp" style="width: 100%" loading="lazy" />
+          <img src="img/fotos/2.webp" style="width: 100%" loading="lazy" />
+          <img src="img/fotos/11.webp" style="width: 100%" loading="lazy" />
+          <img src="img/fotos/4.webp" style="width: 100%" loading="lazy" />
+        </div>
+        <div class="column-ph">
+          <img src="img/fotos/5.webp" style="width: 100%" loading="lazy" />
+          <img src="img/fotos/7.webp" style="width: 100%" loading="lazy" />
+          <img src="img/fotos/10.webp" style="width: 100%" loading="lazy" />
+          <img src="img/fotos/9.webp" style="width: 100%" loading="lazy" />
+        </div>
+        <div class="column-ph">
+          <img src="img/fotos/6.webp" style="width: 100%" loading="lazy" />
+          <img src="img/fotos/15.webp" style="width: 100%" loading="lazy" />
+          <img src="img/fotos/13.webp" style="width: 100%" loading="lazy" />
+          <img src="img/fotos/17.webp" style="width: 100%" loading="lazy" />
+        </div>
+        <div class="column-ph">
+          <img src="img/fotos/14.webp" style="width: 100%" loading="lazy" />
+          <img src="img/fotos/3.webp" style="width: 100%" loading="lazy" />
+          <img src="img/fotos/16.webp" style="width: 100%" loading="lazy" />
+          <img src="img/fotos/12.webp" style="width: 100%" loading="lazy" />
+        </div>
+      </div>
     </div>
 
     <div id="ns">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#b5838d" fill-opacity="1" d="M0,32L34.3,80C68.6,128,137,224,206,266.7C274.3,309,343,299,411,282.7C480,267,549,245,617,218.7C685.7,192,754,160,823,133.3C891.4,107,960,85,1029,96C1097.1,107,1166,149,1234,149.3C1302.9,149,1371,107,1406,85.3L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
-        </svg>
-        <div class="ns-container text-center px-2" style="margin-top: -1px;">
-            <span id="ns-title" class="section-title d-block mb-5 pt-5">Nuestros servicios</span>
-        
-            <div class="d-flex justify-content-center">
-                <p class="ns-p py-3">
-                    Ofrecemos organizaciones de 
-                    <span style="color: #ffe4c5;">comuniones</span>, 
-                    <span style="color: #ffe4c5;">bodas</span>, 
-                    <span style="color: #ffe4c5;">bautizos</span>, 
-                    <span style="color: #ffe4c5;">cumpleaños</span>, 
-                    <span style="color: #ffe4c5;">comidas familiares</span>, 
-                    <span style="color: #ffe4c5;">cafe-breaks</span>,
-                    <span style="color: #ffe4c5;">ranchos</span>, 
-                    <span style="color: #ffe4c5;">paellas</span>, 
-                    <span style="color: #ffe4c5;">comidas populares</span>, 
-                    <span style="color: #ffe4c5;">comidas multitudinarias</span> y 
-                    <span style="color: #ffe4c5;">fiestas de pueblos</span>. 
-                    Tambíen contamos con profesionales <span style="color: #ffe4c5;">cortadores de jamón</span>, un <span style="color: #ffe4c5;">cocinero parrillero</span>, <span style="color: #ffe4c5;">cocineros a domicilio</span> y un <span style="color: #ffe4c5;">coctelero</span>
-                </p>
-            </div>
-    
-            <div class="d-flex justify-content-center">
-                <p class="ns-p py-3">
-                    Tenemos <span style="color: #ffe4c5;">experiencia</span> en realizar <span style="color: #ffe4c5;">anuncios</span>, <span style="color: #ffe4c5;">películas</span> y <span style="color: #ffe4c5;">programas</span> de televisión al colaborar con <span style="color: #ffe4c5;">Aragon TV</span>, <span style="color: #ffe4c5;">Mediapro</span> y <span style="color: #ffe4c5;">Factoría plural</span>.
-                </p>
-            </div>
-    
-            <div class="d-flex justify-content-center">
-                <p class="ns-p py-3">
-                    Disponemos de <span style="color: #ffe4c5;">fincas</span> y <span style="color: #ffe4c5;">locales</span> para poder alojar los eventos situados en Zaragoza capital.
-                </p>
-            </div>
-    
-            <div class="d-flex justify-content-center">
-                <p class="ns-p py-3">
-                    Nuestros <span style="color: #ffe4c5;">menús</span> pueden ser <span style="color: #ffe4c5;">personalizados</span>, adaptados para <span style="color: #ffe4c5;">intolerantes</span> o <span style="color: #ffe4c5;">alérgicos</span> (gluten, lactosa, etc...)
-                    y <span style="color: #ffe4c5;">vegetarianos</span> o <span style="color: #ffe4c5;">ovolacteos</span>. Tambíen ofrecemos menús de cocina <span style="color: #ffe4c5;">mexicana</span>, <span style="color: #ffe4c5;">americana</span> e <span style="color: #ffe4c5;">india</span>.
-                </p>
-            </div>
-            
-            <div class="container ns-container">
-                <div class="row">
-                    <div class="col">
-                        <div class="ns-section rounded p-4 m-2 mx-auto">
-                            Comidas
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="ns-section rounded p-4 m-2 mx-auto">
-                            Domicilio
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="ns-section rounded p-4 m-2 mx-auto">
-                            Cortador de jamón
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="ns-section rounded p-4 m-2 mx-auto">
-                            Parrillero
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="ns-section rounded p-4 m-2 mx-auto">
-                            Paellas gigantes
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="ns-section rounded p-4 m-2 mx-auto">
-                            Alquiler de menaje
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="ns-section rounded p-4 m-2 mx-auto">
-                            Wedding planner
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="ns-section rounded p-4 m-2 mx-auto">
-                            Animación eventos
-                        </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                        <div class="ns-section rounded p-4 m-2 mx-auto">
-                            Coctelero
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="ns-section rounded p-4 m-2 mx-auto">
-                            Cocineros a domicilio
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="ns-section rounded p-4 m-2 mx-auto">
-                            Camareros
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="ns-section rounded p-4 m-2 mx-auto">
-                            Menús variados
-                        </div>
-                    </div>
-                  </div>
-                </div> 
-            </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#b5838d"
+          fill-opacity="1"
+          d="M0,32L34.3,80C68.6,128,137,224,206,266.7C274.3,309,343,299,411,282.7C480,267,549,245,617,218.7C685.7,192,754,160,823,133.3C891.4,107,960,85,1029,96C1097.1,107,1166,149,1234,149.3C1302.9,149,1371,107,1406,85.3L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"
+        ></path>
+      </svg>
+      <div class="ns-container text-center px-2" style="margin-top: -1px">
+        <span id="ns-title" class="section-title d-block mb-5 pt-5"
+          >Nuestros servicios</span
+        >
+
+        <div class="d-flex justify-content-center">
+          <span class="quienes-somos" style="color: #46351e">
+            Realizamos <span style="color: #f4e3d6">eventos particulares</span>,
+            <span style="color: #f4e3d6">privados</span>,
+            <span style="color: #f4e3d6">deportivos</span> o de
+            <span style="color: #f4e3d6">fiestas populares</span>. Así mismo,
+            ofrecemos
+            <span style="color: #f4e3d6"
+              >organizaciones de diferentes eventos</span
+            >
+            como comuniones, bodas, bautizos, cumpleaños, comidas familiares,
+            cafe-breaks, ranchos, paellas, comidas populares, comidas
+            multitudinarias y fiestas de pueblos.<br />
+            <br />
+            Contamos con
+            <span style="color: #f4e3d6">profesionales</span> cortadores de
+            jamón, un cocinero parrillero, cocineros a domicilio y un coctelero.
+            <br />
+            <br />
+            Ofrecemos
+            <span style="color: #f4e3d6">menús internacionales</span> de cocina
+            mexicana, americana e india. Nuestros menús pueden ser
+            <span style="color: #f4e3d6">personalizados</span>, adaptados para
+            intolerantes o alérgicos (gluten, lactosa, etc...) y vegetarianos o
+            ovolacteos.
+            <br />
+            <br />
+            También <span style="color: #f4e3d6">disponemos</span> de
+            <span style="color: #f4e3d6">fincas</span> y
+            <span style="color: #f4e3d6">locales</span> para poder alojar los
+            eventos situados en Zaragoza capital.
+            <br />
+            <br />
+          </span>
         </div>
+
+        <div class="container ns-container">
+          <div class="row">
+            <div class="col">
+              <div class="ns-section rounded p-4 m-2 mx-auto">Comidas</div>
+            </div>
+            <div class="col">
+              <div class="ns-section rounded p-4 m-2 mx-auto">Domicilio</div>
+            </div>
+            <div class="col">
+              <div class="ns-section rounded p-4 m-2 mx-auto">
+                Cortador de jamón
+              </div>
+            </div>
+            <div class="col">
+              <div class="ns-section rounded p-4 m-2 mx-auto">Parrillero</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="ns-section rounded p-4 m-2 mx-auto">
+                Paellas gigantes
+              </div>
+            </div>
+            <div class="col">
+              <div class="ns-section rounded p-4 m-2 mx-auto">
+                Alquiler de menaje
+              </div>
+            </div>
+            <div class="col">
+              <div class="ns-section rounded p-4 m-2 mx-auto">
+                Wedding planner
+              </div>
+            </div>
+            <div class="col">
+              <div class="ns-section rounded p-4 m-2 mx-auto">
+                Animación eventos
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="ns-section rounded p-4 m-2 mx-auto">Coctelero</div>
+            </div>
+            <div class="col">
+              <div class="ns-section rounded p-4 m-2 mx-auto">
+                Cocineros a domicilio
+              </div>
+            </div>
+            <div class="col">
+              <div class="ns-section rounded p-4 m-2 mx-auto">Camareros</div>
+            </div>
+            <div class="col">
+              <div class="ns-section rounded p-4 m-2 mx-auto">
+                Menús variados
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div id="c">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="background-color: #b5838d;">
-            <path fill="#3a5a40" fill-opacity="1" d="M0,288L40,288C80,288,160,288,240,250.7C320,213,400,139,480,128C560,117,640,171,720,208C800,245,880,267,960,272C1040,277,1120,267,1200,240C1280,213,1360,171,1400,149.3L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
-        </svg>
-        <div class="c-container text-center" style="margin-top: -1px;">
-            <span id="c-title" class="section-title d-block mb-3 pt-4" style="color: white;">Contacta con nosotros</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 320"
+        style="background-color: #b5838d"
+      >
+        <path
+          fill="#3a5a40"
+          fill-opacity="1"
+          d="M0,288L40,288C80,288,160,288,240,250.7C320,213,400,139,480,128C560,117,640,171,720,208C800,245,880,267,960,272C1040,277,1120,267,1200,240C1280,213,1360,171,1400,149.3L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+        ></path>
+      </svg>
+      <div class="c-container text-center" style="margin-top: -1px">
+        <span
+          id="c-title"
+          class="section-title d-block mb-3 pt-4"
+          style="color: white"
+          >Contacta con nosotros</span
+        >
 
-            <div class="container align-items-center" >
-                <div class="row">
-                    <div class="col d-flex justify-content-center">
-                        <a href="https://www.instagram.com/eventoslasbuenasmigas/" target="_blank">
-                            <div class="c-section-l p-3 m-3 rounded" style="background-color: #fff8ee; color: #46351e; cursor: pointer;">
-                                <i class='bx bxl-instagram-alt' ></i> Instagram
-                            </div>
-                        </a>
-                    </div>
-                    <!-- <div class="col d-flex justify-content-center">
+        <div class="container align-items-center">
+          <div class="row">
+            <div class="col d-flex justify-content-center">
+              <a
+                href="https://www.instagram.com/eventoslasbuenasmigas/"
+                target="_blank"
+              >
+                <div
+                  class="c-section-l p-3 m-3 rounded"
+                  style="
+                    background-color: #fff8ee;
+                    color: #46351e;
+                    cursor: pointer;
+                  "
+                >
+                  <i class="bx bxl-instagram-alt"></i> Instagram
+                </div>
+              </a>
+            </div>
+            <!-- <div class="col d-flex justify-content-center">
                         <div class="c-section p-3 m-3 rounded" style="background-color: #fff8ee; color: #46351e;">
                             <i class='bx bxl-twitter' ></i> Twitter
                         </div>
                     </div> -->
-                    <div class="col d-flex justify-content-center">
-                        <a href="https://www.facebook.com/cocinade.may.14" target="_blank">
-                            <div class="c-section-l p-3 m-3 rounded" style="background-color: #fff8ee; color: #46351e; cursor: pointer;">
-                                <i class='bx bxl-facebook-square' ></i> Facebook
-                            </div>
-                        </a>
-                    </div>
+            <div class="col d-flex justify-content-center">
+              <a
+                href="https://www.facebook.com/cocinade.may.14"
+                target="_blank"
+              >
+                <div
+                  class="c-section-l p-3 m-3 rounded"
+                  style="
+                    background-color: #fff8ee;
+                    color: #46351e;
+                    cursor: pointer;
+                  "
+                >
+                  <i class="bx bxl-facebook-square"></i> Facebook
                 </div>
-                <div class="row mb-5">    
-                    <div class="col d-flex justify-content-center">
-                        <div class="c-section-l p-3 m-3 rounded" style="background-color: #fff8ee; color: #46351e;">
-                            <i class='bx bxs-phone'></i> 6996603311
-                        </div>
-                    </div>
-                    <div class="col d-flex justify-content-center">
-                        <div class="c-section-l p-3 m-3 rounded" style="background-color: #fff8ee; color: #46351e;">
-                            <i class='bx bxl-gmail'></i> eventoslasbuenasmigas@gmail.com
-                        </div>
-                    </div>
-                </div>
-
-                <span class="section-title" style="color: white;">Mapa</span>
-                <iframe class="d-block w-100 map pb-5" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d442.8534187455722!2d-0.8169311168297475!3d41.69567977327466!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf1fc9ee9b04e7955!2sEventos%20Cocina%20De%20May%20Zaragoza!5e0!3m2!1ses!2ses!4v1663952380059!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
+              </a>
             </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col d-flex justify-content-center">
+              <div
+                class="c-section-l p-3 m-3 rounded"
+                style="background-color: #fff8ee; color: #46351e"
+              >
+                <i class="bx bxs-phone"></i> 613 233 353
+              </div>
+            </div>
+            <div class="col d-flex justify-content-center">
+              <div
+                class="c-section-l p-3 m-3 rounded"
+                style="background-color: #fff8ee; color: #46351e"
+              >
+                <i class="bx bxl-gmail"></i> eventoslasbuenasmigas@gmail.com
+              </div>
+            </div>
+          </div>
+
+          <span class="section-title" style="color: white">Mapa</span>
+          <iframe
+            class="d-block w-100 map pb-5"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d442.8534187455722!2d-0.8169311168297475!3d41.69567977327466!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf1fc9ee9b04e7955!2sEventos%20Cocina%20De%20May%20Zaragoza!5e0!3m2!1ses!2ses!4v1663952380059!5m2!1ses!2ses"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
+      </div>
     </div>
 
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
